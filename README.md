@@ -1,4 +1,3 @@
-python manage.py runserver
 
 # 📚 Mi Biblioteca
 
@@ -25,3 +24,5 @@ python manage.py runserver
    ```bash
    git clone https://github.com/tu-usuario/mi-biblioteca.git
    cd mi-biblioteca
+
+Para realizar pruebas 
