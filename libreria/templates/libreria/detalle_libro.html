@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+{% block content %}
+<h2>{{ libro.titulo }}</h2>
+<p><strong>Autor:</strong> {{ libro.autor }}</p>
+<p><strong>Estado:</strong> {{ libro.get_estado_display }}</p>
+<p><strong>Reseña:</strong> {{ libro.resena }}</p>
+<a href="{% url 'editar_libro' libro.pk %}" class="btn btn-warning">Editar</a>
+<form action="{% url 'eliminar_libro' libro.pk %}" method="post" style="display:inline;">
+  {% csrf_token %}
+  <button type="submit" class="btn btn-danger">Eliminar</button>
+</form>
+<a href="{% url 'lista_libros' %}" class="btn btn-secondary">Volver</a>
+{% endblock %}

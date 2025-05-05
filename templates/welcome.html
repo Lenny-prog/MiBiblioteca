@@ -1,0 +1,10 @@
+
+{% extends "base.html" %}
+{% block title %}Bienvenidos{% endblock %}
+{% block content %}
+<div class="text-center mt-5">
+    <h1 class="display-4 text-primary">¡Bienvenidos a la Librería!</h1>
+    <p class="lead">Explora, administra y disfruta tu colección de libros.</p>
+    <a href="{% url 'login' %}" class="btn btn-outline-success btn-lg mt-3">Iniciar Sesión</a>
+</div>
+{% endblock %}
